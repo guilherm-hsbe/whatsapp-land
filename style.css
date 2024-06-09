@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('bootstrap/dist/css/bootstrap.min.css');
+
+:root {
+    --late: #fcf5eb;
+    --late-half: #fcf5ebcc;
+    --vivid: #25d366;
+    --swamp: #111b21;
+    --montserrat: 'Montserrat', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+    
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: var(--poppins);
+}
+
+nav { background-color: var(--late-half); }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
+}
+
+
+
+/* ==========================================================================
+   Background Colors
+   ========================================================================== */
+
+.bg-late { background-color: var(--late); }
+.bg-swamp { background-color: var(--swamp); }
+
+
+
+/* ==========================================================================
+   Text
+   ========================================================================== */
+
+.use-mont { font-family: var(--montserrat); }
+
+.link-ww:hover { color: var(--vivid) !important; }
+.link-ww :is(span) { 
+    text-decoration: underline var(--vivid) 2px;
+    text-underline-offset: 6px;
+}
+.link-ww {
+    width: fit-content;
+    text-decoration: none;
+}
+
+/* Font sizes
+   ========================================================================== */
+
+.fs-large { font-size: 4.5rem; }
+.fs-medium { font-size: 3.5rem; }
+.fs-tiny { font-size: 0.8rem; }
+
+/* Font colors
+   ========================================================================== */
+
+.text-vivid { color: var(--vivid); }
+
+
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+:is(.btn-download, .btn-download:hover) { background-color: var(--vivid); }
+.btn-download:active { 
+    background-color: var(--bs-dark) !important;
+    color: var(--bs-white) !important;
+ }
+.btn-download i { transition: 0.1s ease-in-out transform; }
+.btn-download:hover :is(i) { transform: translateY(3px); }
+
+
+
+/* ==========================================================================
+   Sections/Components
+   ========================================================================== */
+
+.bg-img-header {
+    background-image: url('images/header-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 720px;
+}
+.bg-img-header div {
+    height: 720px;
+}
