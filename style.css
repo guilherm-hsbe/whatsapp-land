@@ -78,11 +78,26 @@ img {
    Buttons
    ========================================================================== */
 
+/* Download button
+========================================================================== */
+
+/* background-color */
 :is(.btn-download, .btn-download:hover) { background-color: var(--vivid); }
+
+/* click-effect */
 .btn-download:active { 
     background-color: var(--bs-dark) !important;
     color: var(--bs-white) !important;
- }
+}
+
+/* hover-effect */
+.btn-download:hover {
+    background-color: var(--bs-dark);
+    color: var(--bs-white) !important;
+    transition: 0.5s ease-in-out background-color;
+}
+
+/* icon-hover-effect */
 .btn-download i { transition: 0.1s ease-in-out transform; }
 .btn-download:hover :is(i) { transform: translateY(3px); }
 
