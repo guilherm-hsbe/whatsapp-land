@@ -9,3 +9,11 @@ AOS.init({
     duration: 700,
     once: true,
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    const anchors = document.querySelectorAll('a');
+    
+    images.forEach(img => img.setAttribute('draggable', 'false'));
+    anchors.forEach(a => a.setAttribute('draggable', 'false'));
+});
