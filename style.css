@@ -102,3 +102,18 @@ img {
 .bg-img-header div {
     height: 720px;
 }
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.container-custom { 
+    width: 100%;
+    margin-inline: auto; }
+@media (min-width: 576px) { .container-custom { max-width: 445px; } }
+@media (min-width: 768px) { .container-custom { max-width: 591px; } }
+@media (min-width: 992px) { .container-custom { max-width: 765px; } }
+@media (min-width: 1200px) { .container-custom { max-width: 926px; } }
+@media (min-width: 1400px) { .container-custom { max-width: 1080px; } }
