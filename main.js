@@ -1,6 +1,7 @@
 import 'bootstrap/dist/js/bootstrap.js';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import 'animate.css';
 import './style.css';
 
 AOS.init({
